@@ -44,7 +44,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "public/makers-logo/anime.min.js",
+    "public/makers-logo/logo_factory.js"
   ],
   "exclude": [
     "node_modules"

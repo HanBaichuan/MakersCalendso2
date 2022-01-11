@@ -83,9 +83,15 @@ export default function Login({ csrfToken }: inferSSRProps<typeof getServerSideP
           <Loader />
         </div>
       )}
-
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <img className="h-6 mx-auto" src="/calendso-logo-white-word.svg" alt="Cal.com Logo" />
+        {/*         <script src="/makers-logo/logo_factory.js"></script>
+        <script src="/makers-logo/anime.min.js"></script> */}
+        {/*         <img className="h-6 mx-auto" src="/makerslogo.gif" alt="Cal.com Logo" style={{ width: 100 + "px", height: 100 + "px" }} />*/}
+
+        <div className="h-6 mx-auto" style={{ width: 90 + "px", height: 90 + "px" }}>
+          <embed type="text/html" src="/makers-logo/index.html" width="90" height="90"></embed>
+        </div>
+
         <h2 className="font-cal mt-6 text-center text-3xl font-bold text-neutral-900">
           {t("sign_in_account")}
         </h2>
@@ -183,7 +189,6 @@ export default function Login({ csrfToken }: inferSSRProps<typeof getServerSideP
           </a>
         </div>
       </div>
-
       <AddToHomescreen />
     </div>
   );

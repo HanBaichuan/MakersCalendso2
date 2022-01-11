@@ -194,7 +194,6 @@ export default function Shell(props: {
       <div>
         <Toaster position="bottom-right" />
       </div>
-
       <div className="flex h-screen overflow-hidden bg-gray-100">
         <div className="hidden md:flex md:flex-shrink-0">
           <div className="flex flex-col w-56">
@@ -202,7 +201,10 @@ export default function Shell(props: {
               <div className="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
                 <Link href="/event-types">
                   <a className="px-4">
-                    <Logo small />
+                    {/* <Logo small /> */}
+                    <div className="h-6 mx-auto" style={{ width: 90 + "px", height: 90 + "px" }}>
+                      <embed type="text/html" src="/makers-logo/index.html" width="90" height="90"></embed>
+                    </div>
                   </a>
                 </Link>
                 <nav className="flex-1 px-2 mt-5 space-y-1 bg-white">
