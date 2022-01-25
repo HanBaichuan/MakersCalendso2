@@ -89,7 +89,7 @@ export default function Login({ csrfToken }: inferSSRProps<typeof getServerSideP
         {/*         <img className="h-6 mx-auto" src="/makerslogo.gif" alt="Cal.com Logo" style={{ width: 100 + "px", height: 100 + "px" }} />*/}
 
         <div className="h-6 mx-auto" style={{ width: 90 + "px", height: 90 + "px" }}>
-          <embed type="text/html" src="/makers-logo/index.html" width="90" height="90"></embed>
+          <embed type="text/html" src="/makers-logo/index.html" width="100" height="100"></embed>
         </div>
 
         <h2 className="font-cal mt-6 text-center text-3xl font-bold text-neutral-900">
