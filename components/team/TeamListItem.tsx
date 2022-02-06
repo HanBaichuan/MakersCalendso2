@@ -89,7 +89,16 @@ export default function TeamListItem(props: {
             </div>
           )}
           {props.team.role === "MEMBER" && (
-            <div>
+            <div className="flex space-x-2">
+              <Tooltip content={t("preview")}>
+                <a
+                  href={`${process.env.NEXT_PUBLIC_APP_URL + "/team/" + props.team.slug}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-icon">
+                  <ExternalLinkIcon className="w-5 h-5 group-hover:text-black" />
+                </a>
+              </Tooltip>
               <Button type="button" color="primary" onClick={declineInvite}>
                 {t("leave")}
               </Button>
@@ -97,6 +106,7 @@ export default function TeamListItem(props: {
           )}
           {props.team.role === "OWNER" && (
             <div className="flex space-x-4">
+              {/* change */}
               <span className="self-center h-6 px-3 py-1 text-xs text-gray-700 capitalize rounded-md bg-gray-50">
                 {t("owner")}
               </span>
